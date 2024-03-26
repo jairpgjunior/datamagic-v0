@@ -286,3 +286,8 @@
   text-align: center;
 }
 }
+
+.imglogo {
+  max-height: 40px; /* Adjust the value as needed */
+  padding-top: 8px;
+}
