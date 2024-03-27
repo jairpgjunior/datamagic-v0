@@ -64,14 +64,14 @@ export default function Home() {
         image: <Image src={ChartImage1} alt="chart1" width={837} height={300} /> 
       },
       "Why are the campaigns not performing well compared to last week?": { 
-        reply: `<p>It appears there has been a decline in performance, particularly noticeable during specific times of the day and with certain audience segments. Through analysis, I've identified the following factors influencing performance:</p>
+        reply: `<p>It appears there has been a decline in performance, particularly noticeable during specific times of the day and with certain audience segments. Through analysis, I've identified some factors to understand performance:</p>
                 <ul>
-                  <li>Fluctuations in user engagement at different times of the day.</li>
-                  <li>In-depth breakdown of performance metrics across various hours of the day and median cost variations.</li>
+                  <li>Fluctuations in user engagement at different times of the day, far behind others factors. </li>
+                  <li>The median acquisition cost can vary significantly at different hours of the day. Refer to the in-depth breakdown for more information..</li>
                 </ul>`,
         image: <Image src={ChartImage2} alt="chart2" width={837} height={300} />
       },
-      "Show me the two main audience segments' cost for conversions at different times of the day. Plot a visualization with the variation compared with other times": { 
+      "Plot and compare the conversion costs for the two main audiences at different times": { 
         reply: `<p>Upon analyzing the data, here are the insights:</p>
                 <ul>
                   <li>Audience segment 1: From 1 am to 6 am, there's relatively low interest, with many clicks but fewer conversions.</li>
@@ -81,12 +81,9 @@ export default function Home() {
         image: <Image src={ChartImage3} alt="chart3" width={837} height={300} />
       },
       "Can you provide insights on how we can improve campaign performance?": { 
-        reply: `<p>Certainly! Based on the analysis, here are some suggestions to enhance campaign performance:</p>
-                <ul>
-                  <li>Optimize bid strategies to align with variations in user activity throughout the day.</li>
-                  <li>Increase bids during peak engagement hours to maximize ad visibility.</li>
-                </ul>
-                <p>For instance, running a prediction model based on past data suggests that by reducing maximum CPC spent during specific times of the day, we could potentially achieve 215 more conversions while spending 24% less per conversion, utilizing the maximum budget allowed for the period.</p>`,
+        reply: `<p>Certainly! Based on the analysis, my suggestion is to optimize bid strategies to align with variations in user activity throughout the day.</p>
+                <p>For instance, running a prediction model based on past data suggests that by increasing maximum CPC spent during specific times of the day, we could potentially achieve 215 more conversions while spending 24% less per conversion in the next 10, utilizing the maximum budget allowed for the period.</p>
+                <p>My confidence for this intervention is 72%.</p>`,
         image: <Image src={ChartImage4} alt="chart4" width={837} height={300} />
       }
     };
