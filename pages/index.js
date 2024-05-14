@@ -29,7 +29,7 @@ export default function Home() {
   }, []);
 
   const handleError = () => {
-    setMessages((prevMessages) => [...prevMessages, { role: "assistant", content: "To get started, fork this Repl and add the environment variable `OPENAI_API_KEY` as a Secret. Make an account on [OpenAI](https://platform.openai.com/docs/api-reference) to get an API key." }]);
+    setMessages((prevMessages) => [...prevMessages, { role: "assistant", content: "To get started, add the environment variable `OPENAI_API_KEY` as a Secret. Make an account on [OpenAI](https://platform.openai.com/docs/api-reference) to get an API key." }]);
     setLoading(false);
     setUserInput("");
   }
