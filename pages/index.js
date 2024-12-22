@@ -13,7 +13,7 @@ export default function Home() {
   const [userInput, setUserInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [messages, setMessages] = useState([
-    { role: "assistant", content: "Hi there! How can I help?" }
+    { role: "assistant", content: "Hi there! I'm an AI-powered platform designed to simplify the management and optimization of digital advertising campaigns. Use one of the following prompts to explore my capabilities:\n1 - Tell me about the weekly state of the campaigns for client SAS in Meta platform\n2 - Why are the campaigns not performing well compared to last week?\n3 - Plot and compare the conversion costs for the two main audiences at different times\n4 - Can you provide insights on how we can improve campaign performance?" }
   ]);
 
   const messageListRef = useRef(null);
