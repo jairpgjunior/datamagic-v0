@@ -61,9 +61,10 @@ export default function Home() {
                   <li>Interestingly, the allocated budget wasn't fully utilized; approximately 20% remained unspent, which could potentially impact the final results.</li>
                 </ul>
                  <p>Other prompts you can use:</p>
+                 <ul>
                     <li>Why are the campaigns not performing well compared to last week?</li>
                     <li>Plot and compare the conversion costs for the two main audiences at different times</li>
-                    <li>Can you provide insights on how we can improve campaign performance?</li>`,
+                    <li>Can you provide insights on how we can improve campaign performance?</li></ul>`,
         image: <Image src={ChartImage1} alt="chart1" width={837} height={300} /> 
       },
       "Why are the campaigns not performing well compared to last week?": { 
