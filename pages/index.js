@@ -13,16 +13,7 @@ export default function Home() {
   const [userInput, setUserInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [messages, setMessages] = useState([
-    { 
-      role: "assistant", 
-      content: `Hi there! I'm an AI-powered platform designed to simplify the management and optimization of digital advertising campaigns.<br />
-Use one of the following prompts to explore my capabilities:<br />
-1 - Tell me about the weekly state of the campaigns for client SAS in Meta platform<br />
-2 - Why are the campaigns not performing well compared to last week?<br />
-3 - Plot and compare the conversion costs for the two main audiences at different times<br />
-4 - Can you provide insights on how we can improve campaign performance?`
-    }
-  ]);
+    { role: "assistant", content: "Hi there! I'm an AI-powered platform designed to simplify the management and optimization of digital advertising campaigns. Start asking me something like:\n Tell me about the weekly state of the campaigns for client SAS in Meta platform" }
 
   const messageListRef = useRef(null);
   const textAreaRef = useRef(null);
@@ -68,7 +59,11 @@ Use one of the following prompts to explore my capabilities:<br />
                 <ul>
                   <li>Metrics include click-through rates, conversion rates, and overall spend, compared with last week.</li>
                   <li>Interestingly, the allocated budget wasn't fully utilized; approximately 20% remained unspent, which could potentially impact the final results.</li>
-                </ul>`,
+                </ul>
+                 <p>Other prompts you can use:</p>
+                    <li>Why are the campaigns not performing well compared to last week?</li>
+                    <li>Plot and compare the conversion costs for the two main audiences at different times</li>
+                    <li>Can you provide insights on how we can improve campaign performance?</li>`,
         image: <Image src={ChartImage1} alt="chart1" width={837} height={300} /> 
       },
       "Why are the campaigns not performing well compared to last week?": { 
