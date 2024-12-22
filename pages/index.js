@@ -14,7 +14,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [messages, setMessages] = useState([
     { role: "assistant", content: "Hi there! I'm an AI-powered platform designed to simplify the management and optimization of digital advertising campaigns. Start asking me something like:\n Tell me about the weekly state of the campaigns for client SAS in Meta platform" }
-
+ ]);
   const messageListRef = useRef(null);
   const textAreaRef = useRef(null);
 
